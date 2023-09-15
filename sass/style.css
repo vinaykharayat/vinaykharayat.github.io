@@ -1,0 +1,491 @@
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx");
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* =======================================================
+*
+* 	Template Style 
+*	Edit this section
+*
+* ======================================================= */
+html {
+  font: 5vmin/1.3 Serif;
+}
+
+body {
+  display: block;
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.5;
+  color: transparent;
+  background: #123;
+  height: 100%;
+  position: relative;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 768px) {
+  body {
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+
+p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+head {
+  display: block;
+  font-size: 52px;
+  color: transparent;
+}
+
+head::before,
+head::after,
+body::before,
+body::after {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 3em;
+  height: 3em;
+  content: ".";
+  mix-blend-mode: screen;
+  animation: 44s -27s move infinite ease-in-out alternate;
+}
+
+body::before {
+  text-shadow: 0.8054361177em 1.4581035669em 7px hsla(39.5329211628, 100%, 50%, 0.9), 1.9022330529em 1.7890562094em 7px hsla(228.7842611569, 100%, 50%, 0.9), 1.1632799823em -0.1754318928em 7px hsla(262.1480014532, 100%, 50%, 0.9), -0.4559157014em 0.9490690558em 7px hsla(76.8679607886, 100%, 50%, 0.9), 1.9893870112em 0.0102608632em 7px hsla(188.3879961558, 100%, 50%, 0.9), -0.4768179587em -0.4308066937em 7px hsla(117.6665071629, 100%, 50%, 0.9), -0.4740825903em 1.9474830049em 7px hsla(6.6711832748, 100%, 50%, 0.9), 0.3403223434em 1.4726456116em 7px hsla(79.9275902082, 100%, 50%, 0.9), 1.7007879624em 1.2731801555em 7px hsla(5.3353293526, 100%, 50%, 0.9), 0.2754548211em -0.0799079953em 7px hsla(66.2103642128, 100%, 50%, 0.9), 0.555486562em 0.1857129254em 7px hsla(244.9051154476, 100%, 50%, 0.9), 0.667227256em 2.3339616904em 7px hsla(60.1778578145, 100%, 50%, 0.9), -0.0718858248em 2.3330764764em 7px hsla(333.7156485062, 100%, 50%, 0.9), 1.2774750746em 1.4930679141em 7px hsla(117.0987410628, 100%, 50%, 0.9), 0.0293532002em 0.5958329941em 7px hsla(146.9933836466, 100%, 50%, 0.9), -0.0590380198em 1.6116999291em 7px hsla(230.8667082283, 100%, 50%, 0.9), 0.2073400639em -0.1941807832em 7px hsla(326.5439618003, 100%, 50%, 0.9), 2.3177531991em 0.0299888404em 7px hsla(4.0754502478, 100%, 50%, 0.9), 1.0070748394em 0.7314754437em 7px hsla(184.8384318495, 100%, 50%, 0.9), 0.7409004928em -0.0615579561em 7px hsla(303.0575010816, 100%, 50%, 0.9), 0.3061467569em 0.9126447156em 7px hsla(207.4828871733, 100%, 50%, 0.9), 1.4979017696em 0.4235151288em 7px hsla(345.7807760661, 100%, 50%, 0.9), 1.2975521567em 1.0164082989em 7px hsla(140.0638596801, 100%, 50%, 0.9), 0.989444834em -0.2390972226em 7px hsla(54.2505016601, 100%, 50%, 0.9), -0.3531718604em 1.0642860002em 7px hsla(243.835979879, 100%, 50%, 0.9), 2.2249898024em 0.068051264em 7px hsla(138.7718179331, 100%, 50%, 0.9), 0.3707094536em -0.0753022252em 7px hsla(208.5565128223, 100%, 50%, 0.9), 0.4776973321em 0.4605425319em 7px hsla(32.3123393856, 100%, 50%, 0.9), 1.9312620877em 0.0234008876em 7px hsla(260.5979069883, 100%, 50%, 0.9), 0.2642789476em 1.3310848682em 7px hsla(332.2060143138, 100%, 50%, 0.9), 1.7743085731em 0.4150593433em 7px hsla(48.5750920127, 100%, 50%, 0.9), 2.4476459945em 2.016095541em 7px hsla(187.0916171728, 100%, 50%, 0.9), 2.4144327646em -0.4158253149em 7px hsla(186.3781420096, 100%, 50%, 0.9), 1.5361643486em -0.3511841959em 7px hsla(113.7871575049, 100%, 50%, 0.9), -0.3480824297em -0.0234928885em 7px hsla(237.8511093815, 100%, 50%, 0.9), 0.7362225926em 1.7144065453em 7px hsla(74.5144649818, 100%, 50%, 0.9), 0.840107433em 1.7690746286em 7px hsla(191.0865871032, 100%, 50%, 0.9), 0.0865914062em 1.5496540447em 7px hsla(200.9290010184, 100%, 50%, 0.9), -0.3227123556em 0.1121071735em 7px hsla(353.3456648023, 100%, 50%, 0.9), 1.0925881685em 0.803217796em 7px hsla(338.9696402961, 100%, 50%, 0.9), 1.2898300897em 2.1051709224em 7px hsla(315.0032466392, 100%, 50%, 0.9);
+  animation-duration: 44s;
+  animation-delay: -27s;
+}
+
+body::after {
+  text-shadow: 1.9866476043em 0.749169958em 7px hsla(348.260219424, 100%, 50%, 0.9), 0.6549055572em 0.9610889836em 7px hsla(293.9790262394, 100%, 50%, 0.9), 0.7700169412em 1.8224480685em 7px hsla(274.6574912073, 100%, 50%, 0.9), 0.5885968267em 0.3132185416em 7px hsla(153.0076414312, 100%, 50%, 0.9), 0.4150775928em 0.2318225307em 7px hsla(339.2713953993, 100%, 50%, 0.9), 1.4184987869em -0.3214366318em 7px hsla(157.1010487746, 100%, 50%, 0.9), 1.3195769728em 1.0834558437em 7px hsla(280.6712805146, 100%, 50%, 0.9), -0.2499564879em 1.9395695966em 7px hsla(253.0965669931, 100%, 50%, 0.9), 0.9120507627em 2.2630147193em 7px hsla(343.6545927563, 100%, 50%, 0.9), -0.4566443766em 0.3315637202em 7px hsla(227.691345404, 100%, 50%, 0.9), 2.4297544171em 1.3040215104em 7px hsla(49.2745079248, 100%, 50%, 0.9), 0.4908115619em 0.324854086em 7px hsla(213.5280212569, 100%, 50%, 0.9), 0.0927406146em 1.5534684804em 7px hsla(203.7263940457, 100%, 50%, 0.9), 0.3527448649em -0.0607142485em 7px hsla(307.8998586843, 100%, 50%, 0.9), 0.7866490738em 2.4942555251em 7px hsla(261.0682513457, 100%, 50%, 0.9), 0.6082673418em 0.7516254978em 7px hsla(77.1154837098, 100%, 50%, 0.9), 2.2614202682em 2.4287230288em 7px hsla(331.1626899747, 100%, 50%, 0.9), -0.4504681509em 0.6588114095em 7px hsla(58.4632863405, 100%, 50%, 0.9), 2.0134539414em 0.429315933em 7px hsla(348.1136269225, 100%, 50%, 0.9), 1.1819865284em 1.5478808304em 7px hsla(16.8197977044, 100%, 50%, 0.9), 2.0689010867em 0.8085023455em 7px hsla(72.7641904378, 100%, 50%, 0.9), 1.4069440346em 0.4250834733em 7px hsla(107.3209172646, 100%, 50%, 0.9), 2.1969672058em 1.9396505873em 7px hsla(180.406310118, 100%, 50%, 0.9), 1.3073392357em 0.531463239em 7px hsla(315.3776608088, 100%, 50%, 0.9), 0.4028476327em 1.9882489943em 7px hsla(160.3913749358, 100%, 50%, 0.9), 0.7172464452em 0.277557853em 7px hsla(355.3470260443, 100%, 50%, 0.9), 0.7805176354em 2.471539768em 7px hsla(334.343039501, 100%, 50%, 0.9), 0.5697980976em 2.3465133669em 7px hsla(109.2577839829, 100%, 50%, 0.9), 1.7805251448em 1.7676207926em 7px hsla(164.5363767248, 100%, 50%, 0.9), 0.4787162193em 2.4144274716em 7px hsla(200.2378955466, 100%, 50%, 0.9), 2.2128378996em 1.7182493792em 7px hsla(347.2200540416, 100%, 50%, 0.9), 1.3553282627em 0.1515444654em 7px hsla(324.1940678906, 100%, 50%, 0.9), 1.665855317em 1.825897787em 7px hsla(322.2041391087, 100%, 50%, 0.9), -0.3797475717em 1.944027513em 7px hsla(247.0698362853, 100%, 50%, 0.9), 0.5272549958em 0.0443535462em 7px hsla(332.2150863171, 100%, 50%, 0.9), 0.6422060624em 0.960141639em 7px hsla(7.123779672, 100%, 50%, 0.9), 0.0509995239em 2.2352809061em 7px hsla(25.1457241909, 100%, 50%, 0.9), -0.4985745057em 0.5377954078em 7px hsla(169.0367658032, 100%, 50%, 0.9), 1.2157914752em 1.8160818294em 7px hsla(126.6597055755, 100%, 50%, 0.9), 0.3311453518em -0.4407102699em 7px hsla(323.7364331729, 100%, 50%, 0.9), 2.3631233304em 1.2391101802em 7px hsla(235.7787800674, 100%, 50%, 0.9);
+  animation-duration: 43s;
+  animation-delay: -32s;
+}
+
+head::before {
+  text-shadow: 0.0814650046em 1.6715898582em 7px hsla(33.5893087241, 100%, 50%, 0.9), 1.9807352383em 1.9840081068em 7px hsla(1.1486722025, 100%, 50%, 0.9), 2.3795631471em 2.1613296584em 7px hsla(30.2623134167, 100%, 50%, 0.9), 2.1335970473em 2.1182484026em 7px hsla(205.0930171933, 100%, 50%, 0.9), -0.4539585225em 1.9131574778em 7px hsla(178.6130486629, 100%, 50%, 0.9), 0.6861621773em 2.0195218801em 7px hsla(119.1792971498, 100%, 50%, 0.9), 1.3295541234em 1.2339881742em 7px hsla(14.0389404943, 100%, 50%, 0.9), 1.9209330072em -0.2218660775em 7px hsla(160.823435913, 100%, 50%, 0.9), 0.7659340043em 0.2179451479em 7px hsla(68.7785073948, 100%, 50%, 0.9), 0.4962029504em 0.0076503661em 7px hsla(278.5464071158, 100%, 50%, 0.9), 2.3608473894em 2.2874141483em 7px hsla(131.192862582, 100%, 50%, 0.9), 1.8649396208em 1.0374458167em 7px hsla(170.9146156754, 100%, 50%, 0.9), -0.4706695188em 0.0350507516em 7px hsla(319.1161739071, 100%, 50%, 0.9), 1.8837066947em 2.4844846155em 7px hsla(65.4995487263, 100%, 50%, 0.9), -0.2487843856em 0.7815338392em 7px hsla(278.3310159412, 100%, 50%, 0.9), 0.9786148685em 0.8525478067em 7px hsla(301.8461405298, 100%, 50%, 0.9), -0.1771222079em 0.9197288883em 7px hsla(107.8052407145, 100%, 50%, 0.9), 0.392823151em -0.0712327453em 7px hsla(331.3487510985, 100%, 50%, 0.9), 1.9894057894em 2.0628699886em 7px hsla(340.2573965583, 100%, 50%, 0.9), 2.0231400673em 1.1368744407em 7px hsla(31.3013488003, 100%, 50%, 0.9), 0.9517684813em 1.7667114764em 7px hsla(253.3147417381, 100%, 50%, 0.9), 1.4658659878em 2.2945431437em 7px hsla(181.7480185037, 100%, 50%, 0.9), 0.029579017em -0.2901465624em 7px hsla(188.132574588, 100%, 50%, 0.9), -0.388802547em 0.036366569em 7px hsla(102.5519409588, 100%, 50%, 0.9), 1.2884669272em 1.1096953207em 7px hsla(124.2568854717, 100%, 50%, 0.9), 0.2636748182em 0.755078714em 7px hsla(102.3959420995, 100%, 50%, 0.9), -0.3166105126em 2.1274174404em 7px hsla(170.0192037808, 100%, 50%, 0.9), 0.6568803709em 1.404078264em 7px hsla(86.1744828832, 100%, 50%, 0.9), 1.9896797994em 0.0319867492em 7px hsla(290.3032157313, 100%, 50%, 0.9), 1.3044051457em 0.1908552984em 7px hsla(18.3163839285, 100%, 50%, 0.9), -0.1559758782em 2.096770574em 7px hsla(244.0055505895, 100%, 50%, 0.9), 1.2455458262em 1.8104906031em 7px hsla(143.0422584631, 100%, 50%, 0.9), 1.9305593148em -0.4693610701em 7px hsla(44.7740001092, 100%, 50%, 0.9), 0.7137916612em 0.4094506063em 7px hsla(39.3438089179, 100%, 50%, 0.9), 0.5996906921em 2.3755167843em 7px hsla(226.0510410424, 100%, 50%, 0.9), 0.3984796164em 1.392978419em 7px hsla(223.0866816553, 100%, 50%, 0.9), 0.2350400708em 1.587287928em 7px hsla(43.6975011491, 100%, 50%, 0.9), 2.2107871618em 1.302551525em 7px hsla(267.2726334059, 100%, 50%, 0.9), -0.0525399419em 1.352164754em 7px hsla(205.1330350691, 100%, 50%, 0.9), -0.1227658318em 1.0511136805em 7px hsla(336.1826832475, 100%, 50%, 0.9), 1.8244290386em -0.0835884659em 7px hsla(26.3031992794, 100%, 50%, 0.9);
+  animation-duration: 42s;
+  animation-delay: -23s;
+}
+
+head::after {
+  text-shadow: 0.7366420052em 2.4060039454em 7px hsla(296.4023600168, 100%, 50%, 0.9), 0.5607662793em 1.6666931594em 7px hsla(191.5759598692, 100%, 50%, 0.9), 0.2891382401em 2.0412253417em 7px hsla(106.6065136019, 100%, 50%, 0.9), 0.2420451663em 0.9531343104em 7px hsla(177.7407748796, 100%, 50%, 0.9), 2.1400246217em 1.4693759258em 7px hsla(170.6963905954, 100%, 50%, 0.9), 1.4860858211em 1.003993385em 7px hsla(176.3707922118, 100%, 50%, 0.9), 1.2707162194em 0.843507265em 7px hsla(98.715018034, 100%, 50%, 0.9), 2.3794610814em -0.2321164682em 7px hsla(236.2058945285, 100%, 50%, 0.9), 1.5890424299em -0.4946916991em 7px hsla(157.8223267641, 100%, 50%, 0.9), 2.3938827013em -0.4584885166em 7px hsla(199.5534097686, 100%, 50%, 0.9), -0.2390033265em -0.2776972521em 7px hsla(71.2876315123, 100%, 50%, 0.9), 1.2952767818em 0.526077265em 7px hsla(154.4204222981, 100%, 50%, 0.9), 1.0705230482em 2.4196925428em 7px hsla(144.3437046876, 100%, 50%, 0.9), 1.1269092858em -0.2898557219em 7px hsla(38.6909939077, 100%, 50%, 0.9), 0.4279986397em 1.126458598em 7px hsla(318.0513734814, 100%, 50%, 0.9), 2.4478494796em 2.0820931577em 7px hsla(292.0174130056, 100%, 50%, 0.9), -0.0705997171em 0.1378499978em 7px hsla(120.1921583203, 100%, 50%, 0.9), 1.3209044828em 2.1570531754em 7px hsla(289.2548148319, 100%, 50%, 0.9), 0.5340503927em -0.151657391em 7px hsla(81.0605400267, 100%, 50%, 0.9), 2.2096522196em 0.1487784075em 7px hsla(44.2034830039, 100%, 50%, 0.9), 1.0514757657em -0.2288195321em 7px hsla(4.3680766827, 100%, 50%, 0.9), 0.6002626259em 1.4255042002em 7px hsla(134.9741272688, 100%, 50%, 0.9), -0.2105156917em 0.5640749152em 7px hsla(171.3024859342, 100%, 50%, 0.9), 1.253482597em 0.0029852781em 7px hsla(335.1251642628, 100%, 50%, 0.9), 1.8555438709em -0.0160257621em 7px hsla(344.5785462755, 100%, 50%, 0.9), 1.5331310423em 1.0777943863em 7px hsla(249.5346424015, 100%, 50%, 0.9), -0.0414895775em 0.6625387521em 7px hsla(163.1573662277, 100%, 50%, 0.9), 1.0771766551em 1.751639437em 7px hsla(94.7507295861, 100%, 50%, 0.9), 0.0439153945em -0.4417594383em 7px hsla(77.5389339636, 100%, 50%, 0.9), 2.0717667015em 0.7306717113em 7px hsla(193.9297299144, 100%, 50%, 0.9), 0.3855340492em 1.6805055631em 7px hsla(351.2364735166, 100%, 50%, 0.9), 2.4485093546em -0.0609448601em 7px hsla(30.5928809306, 100%, 50%, 0.9), 2.319061667em 1.2360066568em 7px hsla(245.7308917233, 100%, 50%, 0.9), -0.2924041145em 1.2157508769em 7px hsla(287.9294003999, 100%, 50%, 0.9), 1.233367849em -0.0494491554em 7px hsla(82.9269744922, 100%, 50%, 0.9), -0.1562648985em 0.9070651677em 7px hsla(161.52911105, 100%, 50%, 0.9), -0.0323668087em 0.8229452901em 7px hsla(173.3613040749, 100%, 50%, 0.9), 1.6329515245em 1.7229431061em 7px hsla(225.6016590226, 100%, 50%, 0.9), 2.3647697852em 2.2016055694em 7px hsla(345.1810271271, 100%, 50%, 0.9), 1.9678396304em 1.9920986713em 7px hsla(257.8237878661, 100%, 50%, 0.9), -0.2744525288em 0.3920007615em 7px hsla(153.2452098021, 100%, 50%, 0.9);
+  animation-duration: 41s;
+  animation-delay: -19s;
+}
+
+@keyframes move {
+  from {
+    transform: rotate(0deg) scale(12) translateX(-20px);
+  }
+  to {
+    transform: rotate(360deg) scale(18) translateX(20px);
+  }
+}
+a {
+  color: #17e7a4;
+  transition: 0.5s;
+}
+a:hover, a:active, a:focus {
+  color: #17e7a4;
+  outline: none;
+}
+
+p {
+  margin-bottom: 1.5em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #fff;
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-weight: 400;
+  margin: 0 0 30px 0;
+}
+
+::-webkit-selection {
+  color: #fff;
+  background: #17e7a4;
+}
+
+::-moz-selection {
+  color: #fff;
+  background: #17e7a4;
+}
+
+::selection {
+  color: #fff;
+  background: #17e7a4;
+}
+
+#fh5co-main {
+  max-width: 760px;
+  min-height: 600px;
+  margin: 5em auto 5em auto;
+  position: relative;
+  background: rgba(0, 0, 0, 0.85);
+  overflow: hidden;
+  border-radius: 7px;
+  transition: 0.5s;
+}
+@media screen and (max-width: 768px) {
+  #fh5co-main {
+    margin: 2em 0.5em 5em 0.5em;
+  }
+}
+
+.fh5co-tab-wrap {
+  position: relative;
+}
+.fh5co-tab-wrap .fh5co-tab-menu {
+  list-style: none;
+  text-align: center;
+  margin-bottom: 2em;
+  position: relative;
+  top: -0.5em;
+  padding: 0;
+  margin: 0;
+}
+@media screen and (max-width: 768px) {
+  .fh5co-tab-wrap .fh5co-tab-menu {
+    top: -7px;
+  }
+}
+.fh5co-tab-wrap .fh5co-tab-menu li {
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.fh5co-tab-wrap .fh5co-tab-menu li a {
+  padding: 2em 1em 1em 1em;
+  position: relative;
+  color: rgba(255, 255, 255, 0.5);
+  z-index: 10;
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  transition: 0.3s;
+}
+.fh5co-tab-wrap .fh5co-tab-menu li a .icon {
+  display: block;
+  position: relative;
+  font-size: 22px;
+  bottom: 0;
+  transition: 0.3s;
+}
+.fh5co-tab-wrap .fh5co-tab-menu li a .menu-text {
+  display: block;
+  transition: 0.5s;
+}
+@media screen and (max-width: 768px) {
+  .fh5co-tab-wrap .fh5co-tab-menu li a .menu-text {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .fh5co-tab-wrap .fh5co-tab-menu li a {
+    padding: 1em 0.5em 0.5em 0.5em;
+  }
+}
+.fh5co-tab-wrap .fh5co-tab-menu li a:after {
+  position: absolute;
+  content: "";
+  height: 0;
+  background: #17e7a4;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border-radius: 7px;
+}
+.fh5co-tab-wrap .fh5co-tab-menu li a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.fh5co-tab-wrap .fh5co-tab-menu li a:hover .icon {
+  bottom: 10px;
+}
+@media screen and (max-width: 768px) {
+  .fh5co-tab-wrap .fh5co-tab-menu li a:hover .icon {
+    bottom: 0px;
+  }
+}
+.fh5co-tab-wrap .fh5co-tab-menu li a:hover:after {
+  height: 100%;
+}
+.fh5co-tab-wrap .fh5co-tab-menu li.active .icon {
+  bottom: 10px;
+}
+@media screen and (max-width: 768px) {
+  .fh5co-tab-wrap .fh5co-tab-menu li.active .icon {
+    bottom: 0px;
+  }
+}
+.fh5co-tab-wrap .fh5co-tab-menu li.active > a {
+  color: #fff;
+  text-decoration: none;
+}
+.fh5co-tab-wrap .fh5co-tab-menu li.active > a:after {
+  height: 100%;
+}
+.fh5co-tab-wrap .fh5co-tab-content {
+  padding-left: 4em;
+  padding-right: 4em;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .fh5co-tab-wrap .fh5co-tab-content {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+}
+.fh5co-tab-wrap .fh5co-tab-content.active {
+  opacity: 1;
+  visibility: visible;
+}
+.fh5co-tab-wrap .fh5co-tab-content .fh5co-content-inner {
+  padding: 7em 2em 5em 2em;
+  float: left;
+  width: 100%;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .fh5co-tab-wrap .fh5co-tab-content .fh5co-content-inner {
+    padding: 4em 0.5em 5em 0.5em;
+  }
+}
+
+figure {
+  margin-bottom: 1.5em;
+}
+
+.fh5co-counter .fh5co-number {
+  font-size: 100px;
+  color: #17e7a4;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  line-height: 0.7;
+}
+.fh5co-counter .fh5co-number.fh5co-left {
+  float: left;
+  width: 30%;
+}
+@media screen and (max-width: 768px) {
+  .fh5co-counter .fh5co-number.fh5co-left {
+    width: 100%;
+    line-height: 1.2;
+  }
+}
+.fh5co-counter .fh5co-text {
+  float: right;
+  text-align: left;
+  width: 70%;
+}
+@media screen and (max-width: 768px) {
+  .fh5co-counter .fh5co-text {
+    width: 100%;
+    text-align: center;
+  }
+}
+.fh5co-counter .fh5co-text h3 {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.fh5co-counter .fh5co-text h3.border-bottom:after {
+  content: "";
+  width: 50px;
+}
+
+.fh5co-social {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.fh5co-social li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+.fh5co-social li a {
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 20px;
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  border-radius: 7px;
+}
+@media screen and (max-width: 768px) {
+  .fh5co-social li a {
+    padding: 10px 8px;
+  }
+}
+.fh5co-social li a:hover {
+  color: #17e7a4;
+}
+.fh5co-social li a:hover, .fh5co-social li a:active, .fh5co-social li a:focus {
+  outline: none;
+  text-decoration: none;
+}
+
+.fh5co-feature {
+  text-align: left;
+  width: 100%;
+  float: left;
+}
+.fh5co-feature .fh5co-icon {
+  float: left;
+  width: 10%;
+  display: block;
+  margin-top: 5px;
+}
+.fh5co-feature .fh5co-icon i {
+  color: #17e7a4;
+  font-size: 40px;
+}
+.fh5co-feature .fh5co-text {
+  float: right;
+  width: 82%;
+}
+@media screen and (max-width: 768px) {
+  .fh5co-feature .fh5co-text {
+    width: 82%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .fh5co-feature .fh5co-text {
+    width: 72%;
+  }
+}
+.fh5co-feature .fh5co-text h2,
+.fh5co-feature .fh5co-text h3 {
+  margin: 0;
+  padding: 0;
+}
+.fh5co-feature .fh5co-text h3 {
+  font-weight: 300;
+  margin-bottom: 10px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 20px;
+}
+.fh5co-feature .fh5co-text h2 {
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.chart {
+  width: 160px;
+  height: 160px;
+  margin: 0 auto 30px auto;
+  position: relative;
+  text-align: center;
+}
+.chart span {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -30px;
+  width: 100%;
+}
+.chart span strong {
+  display: block;
+}
+.chart canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#fh5co-footer {
+  margin-top: 50px;
+  background: rgb(0, 0, 0);
+  clear: both;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px 20px;
+  line-height: 1.2;
+}
+#fh5co-footer small {
+  font-size: 14px;
+}
+#fh5co-footer .fh5co-author {
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  #fh5co-footer .fh5co-author {
+    display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .col-xxs-12 {
+    float: none;
+    width: 100%;
+  }
+}
+
+.row-bottom-padded-lg {
+  padding-bottom: 7em;
+}
+@media screen and (max-width: 768px) {
+  .row-bottom-padded-lg {
+    padding-bottom: 1em;
+  }
+}
+
+.row-bottom-padded-md {
+  padding-bottom: 4em;
+}
+@media screen and (max-width: 768px) {
+  .row-bottom-padded-md {
+    padding-bottom: 1em;
+  }
+}
+
+.row-bottom-padded-sm {
+  padding-bottom: 1em;
+}
+@media screen and (max-width: 768px) {
+  .row-bottom-padded-sm {
+    padding-bottom: 1em;
+  }
+}/*# sourceMappingURL=style.css.map */
