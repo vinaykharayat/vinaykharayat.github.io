@@ -81,40 +81,6 @@ $form-group-margin-bottom: 30px !default;
   -moz-osx-font-smoothing: grayscale;
 }
 
-// @mixin dots($count) {
-//   $text-shadow: ();
-//   @for $i from 0 through $count {
-//     $text-shadow: $text-shadow,
-//       (-0.5+ (random()) * 3) +
-//         em
-//         (-0.5+ (random()) * 3) +
-//         em
-//         7px
-//         hsla(random() * 360, 100%, 50%, 0.9);
-//   }
-//   text-shadow: $text-shadow;
-//   z-index: -1;
-// }
-
-@mixin dots($count) {
-  $text-shadow: ();
-
-  @for $i from 1 through $count {
-    $x-offset: (random()) * 3;
-    $y-offset: (random()) * 3;
-    $color: hsla(random() * 360, 100%, 50%, 0.9);
-
-    $text-shadow: append(
-      $text-shadow,
-      #{$x-offset}em #{$y-offset}em 7px $color,
-      comma
-    );
-  }
-
-  text-shadow: $text-shadow;
-  z-index: -1;
-}
-
 // Import
 @import "bootstrap/mixins";
 @import "bootstrap/variables";
@@ -157,52 +123,52 @@ head {
   color: transparent;
 }
 
-head::before,
-head::after,
-body::before,
-body::after {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  width: 3em;
-  height: 3em;
-  content: ".";
-  mix-blend-mode: screen;
-  animation: 42s -30s move infinite ease-in-out alternate;
-}
+// head::before,
+// head::after,
+// body::before,
+// body::after {
+//   position: fixed;
+//   top: 50%;
+//   left: 50%;
+//   width: 3em;
+//   height: 3em;
+//   content: ".";
+//   mix-blend-mode: screen;
+//   animation: 42s -30s move infinite ease-in-out alternate;
+// }
 
-body::before {
-  @include dots(35);
-  animation-duration: 42s;
-  animation-delay: -30s;
-}
+// body::before {
+//   @include dots(35);
+//   animation-duration: 42s;
+//   animation-delay: -30s;
+// }
 
-body::after {
-  @include dots(35);
-  animation-duration: 41s;
-  animation-delay: -35s;
-}
+// body::after {
+//   @include dots(35);
+//   animation-duration: 41s;
+//   animation-delay: -35s;
+// }
 
-head::before {
-  @include dots(35);
-  animation-duration: 41s;
-  animation-delay: -25s;
-}
+// head::before {
+//   @include dots(35);
+//   animation-duration: 41s;
+//   animation-delay: -25s;
+// }
 
-head::after {
-  @include dots(35);
-  animation-duration: 40s;
-  animation-delay: -22s;
-}
+// head::after {
+//   @include dots(35);
+//   animation-duration: 40s;
+//   animation-delay: -22s;
+// }
 
-@keyframes move {
-  from {
-    transform: rotate(0deg) scale(12) translateX(-20px) translateZ(0);
-  }
-  to {
-    transform: rotate(360deg) scale(18) translateX(20px) translateZ(0);
-  }
-}
+// @keyframes move {
+//   from {
+//     transform: rotate(0deg) scale(12) translateX(-20px) translateZ(0);
+//   }
+//   to {
+//     transform: rotate(360deg) scale(18) translateX(20px) translateZ(0);
+//   }
+// }
 
 a {
   color: $brand-primary;
